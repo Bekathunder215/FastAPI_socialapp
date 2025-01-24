@@ -7,7 +7,7 @@ from typing import Optional
 class UserOut(BaseModel):
     id: int
     email: EmailStr
-    created_at: datetime
+    created_at: Optional[datetime]
 
     class Config:
         from_attributes = True
